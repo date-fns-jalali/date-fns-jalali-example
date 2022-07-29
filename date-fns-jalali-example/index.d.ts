@@ -1,3 +1,3 @@
-export declare function dateFnsJalaliExample(): string;
+export declare function getStartOfMonth(date: Date): Date;
 
 export {};
