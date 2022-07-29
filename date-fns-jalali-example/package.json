@@ -44,5 +44,8 @@
     "vite": "^3",
     "vite-plugin-dts": "^1",
     "vitest": "^0.18"
+  },
+  "dependencies": {
+    "date-fns-jalali": "2.29.1-0"
   }
 }

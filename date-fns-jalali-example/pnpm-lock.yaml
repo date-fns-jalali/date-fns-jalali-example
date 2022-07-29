@@ -4,6 +4,7 @@ specifiers:
   '@microsoft/api-extractor': ^7
   '@types/node': ^18
   c8: ^7
+  date-fns-jalali: 2.29.1-0
   eslint: ^8
   eslint-config-react-app: ^7
   lint-staged: ^13
@@ -12,6 +13,9 @@ specifiers:
   vite: ^3
   vite-plugin-dts: ^1
   vitest: ^0.18
+
+dependencies:
+  date-fns-jalali: 2.29.1-0
 
 devDependencies:
   '@microsoft/api-extractor': 7.28.6
@@ -2178,6 +2182,11 @@ packages:
   /damerau-levenshtein/1.0.8:
     resolution: {integrity: sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==}
     dev: true
+
+  /date-fns-jalali/2.29.1-0:
+    resolution: {integrity: sha512-ZlU9+hujoFgxzc4QFrKIaDqdF+18fDjXmd5iyKVTdinLN1D7w+1zOzRCSiHPufTCp7I0wSbBxs7tK2VpuTEDtQ==}
+    engines: {node: '>=0.11'}
+    dev: false
 
   /debug/2.6.9:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==}
