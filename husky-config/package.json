@@ -1,0 +1,15 @@
+{
+  "name": "husky-config",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "cd .. && husky install"
+  },
+  "keywords": [],
+  "author": "Seyyed Morteza Moosavi",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^8.0.1"
+  }
+}
