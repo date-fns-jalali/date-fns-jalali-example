@@ -46,6 +46,6 @@
     "vitest": "^0.18"
   },
   "dependencies": {
-    "date-fns-jalali": "2.29.1-0"
+    "date-fns-jalali": "2.29.2-0"
   }
 }
