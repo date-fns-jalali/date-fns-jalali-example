@@ -5,9 +5,10 @@ import dts from 'vite-plugin-dts';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [dts({ outputDir: resolve(__dirname, './.cache/dts') })],
+  plugins: [dts({ outDir: resolve(__dirname, './.cache/dts') })],
   test: {
     coverage: {
+      provider: 'istanbul',
       reporter: ['clover', 'json', 'lcov', 'text'],
     },
   },

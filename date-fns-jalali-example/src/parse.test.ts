@@ -1,6 +1,6 @@
 import { newDate, parse, setDefaultOptions } from 'date-fns-jalali';
-import enUs from 'date-fns-jalali/locale/en-US';
-import faIR from 'date-fns-jalali/locale/fa-IR';
+import { enUS } from 'date-fns-jalali/locale/en-US';
+import { faIR } from 'date-fns-jalali/locale/fa-IR';
 import { afterEach, describe, expect, it } from 'vitest';
 
 afterEach(() => {
@@ -19,20 +19,20 @@ describe('date-fns-jalali parse', () => {
   it('parse with locale', () => {
     const date = newDate(1393, 4, 1);
     expect(
-      parse('1393/05/01', 'yyyy/MM/dd', new Date(), { locale: enUs }),
+      parse('1393/05/01', 'yyyy/MM/dd', new Date(), { locale: enUS }),
     ).toEqual(date);
     expect(
       parse(['1', 'Mordad', '1393'].join(' '), 'dd MMMM yyyy', new Date(), {
-        locale: enUs,
+        locale: enUS,
       }),
     ).toEqual(date);
-    expect(parse('Monday', 'EEEE', date, { locale: enUs })).toEqual(
+    expect(parse('Monday', 'EEEE', date, { locale: enUS })).toEqual(
       newDate(1393, 3, 30),
     );
   });
   it('format with default Option', () => {
     const date = newDate(1393, 4, 1);
-    setDefaultOptions({ locale: enUs });
+    setDefaultOptions({ locale: enUS });
     expect(parse('1393/05/01', 'yyyy/MM/dd', new Date())).toEqual(date);
 
     expect(
